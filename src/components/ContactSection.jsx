@@ -129,7 +129,7 @@ import {
                     id="name"
                     name="name"
                     required
-                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
+                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary"
                     placeholder="name..."
                   />
                 </div>
@@ -147,7 +147,7 @@ import {
                     id="email"
                     name="email"
                     required
-                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
+                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary"
                     placeholder="hello@gmail.com"
                   />
                 </div>
