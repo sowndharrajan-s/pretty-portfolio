@@ -1,12 +1,13 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { ArrowRight, ExternalLink, Github, ChevronUp } from "lucide-react";
+import { useState } from "react";
 
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "./projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
+    title: "Portfolioc website",
+    description: "A beautiful portfolio website using React and Tailwind.",
+    image: "./projects/p1.png",
+    tags: ["React", "TailwindCSS", ],
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -30,9 +31,49 @@ const projects = [
     demoUrl: "#",
     githubUrl: "#",
   },
+  {
+    id: 4,
+    title: "Social Media Dashboard",
+    description:
+      "Real-time social media analytics dashboard with user engagement metrics.",
+    image: "./projects/project1.png",
+    tags: ["React", "Firebase", "Chart.js"],
+    demoUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    id: 5,
+    title: "AI Image Generator",
+    description:
+      "Web application that generates unique images using artificial intelligence.",
+    image: "./projects/project2.png",
+    tags: ["Python", "TensorFlow", "Flask"],
+    demoUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    id: 6,
+    title: "Task Management App",
+    description:
+      "Collaborative task management platform with real-time updates and team features.",
+    image: "./projects/project3.png",
+    tags: ["Vue.js", "MongoDB", "Express"],
+    demoUrl: "#",
+    githubUrl: "#",
+  },
 ];
 
 export const ProjectsSection = () => {
+  const [visibleProjects, setVisibleProjects] = useState(3);
+
+  const showMoreProjects = () => {
+    setVisibleProjects(prev => Math.min(prev + 3, projects.length));
+  };
+
+  const showLessProjects = () => {
+    setVisibleProjects(3);
+  };
+
   return (
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
@@ -47,7 +88,7 @@ export const ProjectsSection = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, key) => (
+          {projects.slice(0, visibleProjects).map((project, key) => (
             <div
               key={key}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
@@ -62,8 +103,11 @@ export const ProjectsSection = () => {
 
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                  {project.tags.map((tag, index) => (
+                    <span 
+                      key={index}
+                      className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
+                    >
                       {tag}
                     </span>
                   ))}
@@ -96,14 +140,22 @@ export const ProjectsSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <a
-            className="cosmic-button w-fit flex items-center mx-auto gap-2"
-            target="_blank"
-            href="https://github.com/machadop1407"
-          >
-            Check My Github <ArrowRight size={16} />
-          </a>
+        <div className="text-center mt-12 space-y-4">
+          {visibleProjects < projects.length ? (
+            <button
+              onClick={showMoreProjects}
+              className="cosmic-button w-fit flex items-center mx-auto gap-2"
+            >
+              Show More Projects <ArrowRight size={16} />
+            </button>
+          ) : visibleProjects > 3 && (
+            <button
+              onClick={showLessProjects}
+              className="cosmic-button w-fit flex items-center mx-auto gap-2"
+            >
+              Show Less <ChevronUp size={16} />
+            </button>
+          )}
         </div>
       </div>
     </section>
