@@ -35,12 +35,12 @@ export const Navbar = () => {
           href="#hero"
         >
           <img 
-            src="https://ik.imagekit.io/juu6h1n0h/DocScanner%2021-Mar-2025%2010-24%20am.jpg?updatedAt=1746187679075"
+            src="https://ik.imagekit.io/juu6h1n0h/sownndharrajan-image.jpg?updatedAt=1746451939868"
             alt="Sowndhar Profile"
-            className="w-14 h-14 rounded-full object-cover"
+            className="w-18 h-18 rounded-full object-cover"
           />
-          <span className="relative z-10">
-            <span className="text-glow text-foreground"> Sowndhar </span>{" "}
+          <span className="relative z-10 text-2xl">
+            <span className="text-glow text-foreground text-2xl"> Sowndhar </span>{" "}
             Portfolio
           </span>
         </a>

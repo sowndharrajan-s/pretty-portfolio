@@ -4,7 +4,7 @@ import { useState } from "react";
 const projects = [
   {
     id: 1,
-    title: "Portfolioc website",
+    title: "Portfolio website",
     description: "A beautiful portfolio website using React and Tailwind.",
     image: "./projects/p1.png",
     tags: ["React", "TailwindCSS", ],
