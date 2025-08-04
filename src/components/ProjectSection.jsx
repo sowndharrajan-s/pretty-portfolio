@@ -4,8 +4,8 @@ import { useState } from "react";
 const projects = [
   {
     id: 1,
-    title: "Portfolio website ",
-    description: "A beautiful portfolio website using React and Tailwind.",
+    title: "Ecommerce",
+    description: "A beautiful Ecommerce website using React and Tailwind.",
     image: "./projects/p1.png",
     tags: ["React", "TailwindCSS", ],
     demoUrl: "#",
@@ -13,7 +13,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: " Real Esatate",
     description:
       "Interactive analytics dashboard with data visualization and filtering capabilities.",
     image: "./projects/project2.png",
@@ -23,17 +23,17 @@ const projects = [
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: " Event mangagement system",
     description:
       "Full-featured e-commerce platform with user authentication and payment processing.",
     image: "./projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+    tags: ["React", "Node.js", "MongoDB"],
     demoUrl: "#",
     githubUrl: "#",
   },
   {
     id: 4,
-    title: "Social Media Dashboard",
+    title: "LMS webite",
     description:
       "Real-time social media analytics dashboard with user engagement metrics.",
     image: "./projects/project1.png",
