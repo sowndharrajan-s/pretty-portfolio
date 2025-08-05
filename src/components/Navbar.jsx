@@ -35,7 +35,7 @@ export const Navbar = () => {
           href="#hero"
         >
           <img 
-            src="https://ik.imagekit.io/juu6h1n0h/sownndharrajan-image.jpg?updatedAt=1746451939868"
+            src="https://ik.imagekit.io/juu6h1n0h/DocScanner%2021-Mar-2025%2010-24%20am.jpg?updatedAt=1746187679075"
             alt="Sowndhar Profile"
             className="w-14 h-14 rounded-full object-cover"
           />

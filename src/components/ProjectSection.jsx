@@ -53,13 +53,13 @@ const projects = [
   },
   {
     id: 6,
-    title: "Task Management App",
+    title: "Simple Pagination",
     description:
-      "Collaborative task management platform with real-time updates and team features.",
-    image: "./projects/project3.png",
-    tags: ["Vue.js", "MongoDB", "Express"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "A basic pagination component to navigate through lists or data in pages with clean UI and responsive design.",
+    image: "./projects/pagination.png",
+    tags: ["React" ,"CSS"],
+    demoUrl: "https://pagination-delta-one.vercel.app/",
+    githubUrl: "https://github.com/sowndharrajan-s/pagination",
   },
 ];
 
