@@ -45,7 +45,7 @@ const projects = [
     id: 5,
     title: "personal Portfolio",
     description:
-      "The Beautiful Portfolio",
+      "A responsive personal portfolio showcasing projects, skills, and contact information with a modern UI.",
     image: "./projects/p1.png",
     tags: ["React", "Tailwind CSS"],
     demoUrl: "https://sowndhar354.vercel.app/",
