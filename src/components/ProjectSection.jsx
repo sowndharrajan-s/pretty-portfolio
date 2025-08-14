@@ -7,12 +7,23 @@ const projects = [
     title: "Event Mangagement System",
     description: "A role-based event management platform for colleges with event creation, approval, registration form, and feedback features.",
     image: "./projects/event.png",
-    tags: ["React", "TailwindCSS", ],
+    tags: ["React", "node JS","Mongo DB"],
     demoUrl: "https://shanmugaeventmanagementportal.web.app/event",
     githubUrl: "https://github.com/sowndharrajan-s",
   },
   {
     id: 2,
+    title: "Ecommerce Website",
+    description:
+      "Forever E-Commerce – Online shopping platform featuring a modern UI, responsive design, and smooth navigation for browsing and purchasing products.",
+    image: "./projects/forever.png",
+    tags: ["React", "tailwind CSS","Context API"],
+    demoUrl: "https://forever-ecommerce-gamma.vercel.app/",
+    githubUrl: "https://github.com/sowndharrajan-s/forever-ecomm",
+  },
+  {
+    
+    id: 3,
     title: " Real Esatate",
     description:
       "A responsive real estate listing site with property cards and a modern, mobile-friendly UI.",
@@ -20,16 +31,6 @@ const projects = [
     tags: ["react JS", "Tailwind CSS"],
     demoUrl: "https://real-estate-orpin-eta.vercel.app/",
     githubUrl: "https://github.com/sowndharrajan-s/real-estate",
-  },
-  {
-    id: 3,
-    title: "Ecommerce",
-    description:
-      "A clean and responsive front-end e-commerce site with product browsing and cart interface.",
-    image: "./projects/simple-ecomm.png",
-    tags: ["React", "tailwind CSS"],
-    demoUrl: "https://ecomm-lovat-two.vercel.app/",
-    githubUrl: "https://github.com/sowndharrajan-s/ecomm",
   },
   {
     id: 4,
